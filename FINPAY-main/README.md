@@ -1,4 +1,4 @@
-# 💳 FinPay – Student Wallet, Payments & Cashback
+#  FinPay – Student Wallet, Payments & Cashback
 
 FinPay is a campus payment application where **students** top up a wallet and pay **merchants** (canteen, bookstore, etc.), earn **cashback** on payments, and an **admin** runs a **monthly reconciliation** report.
 
@@ -173,13 +173,13 @@ The `wallet_ledger` table is what makes reconciliation possible: a wallet's bala
 
 | Action | Student | Merchant | Admin |
 |---|:---:|:---:|:---:|
-| Register / login | ✅ | ✅ | ✅ |
-| Top up, view balance and wallet history | ✅ | – | – |
-| Pay a merchant, view own payments | ✅ | – | – |
-| View cashback history | ✅ | – | – |
-| Create merchant profile, view payments received | – | ✅ | – |
-| View list of merchants and cashback rules | ✅ | ✅ | ✅ |
-| Monthly reconciliation report | – | – | ✅ |
+| Register / login | Y | Y | Y |
+| Top up, view balance and wallet history | Y | – | – |
+| Pay a merchant, view own payments | Y | – | – |
+| View cashback history | Y | – | – |
+| Create merchant profile, view payments received | – | Y | – |
+| View list of merchants and cashback rules | Y | Y | Y |
+| Monthly reconciliation report | – | – | Y |
 
 ---
 
