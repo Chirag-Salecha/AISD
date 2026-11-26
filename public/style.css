@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6fb;
+    color: #243047;
+    line-height: 1.6;
+}
+
+/* NAVIGATION */
+
+.navbar {
+    background: #15254d;
+    color: white;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #65d6ff;
+}
+
+nav {
+    display: flex;
+    gap: 22px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #65d6ff;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* HERO */
+
+.hero {
+    background: linear-gradient(135deg, #15254d, #436bdb);
+    color: white;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.hero h1 {
+    font-size: clamp(30px, 5vw, 46px);
+    margin-bottom: 16px;
+}
+
+.hero p {
+    font-size: 17px;
+    max-width: 650px;
+    margin: 0 auto 30px;
+}
+
+.hero-btn,
+.primary-link {
+    display: inline-block;
+    padding: 12px 24px;
+    background: white;
+    color: #15254d;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* GENERAL SECTIONS */
+
+.auth-section,
+.dashboard,
+.jobs-section {
+    padding: 55px 7%;
+}
+
+.auth-section h2,
+.dashboard h2,
+.jobs-section h2 {
+    text-align: center;
+    color: #15254d;
+    margin-bottom: 30px;
+}
+
+.auth-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 1050px;
+    margin: auto;
+}
+
+.auth-card,
+.dashboard-card,
+.job-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+}
+
+.auth-card h3,
+.dashboard-card h3 {
+    color: #15254d;
+    margin-bottom: 10px;
+}
+
+.auth-card p,
+.dashboard-card p {
+    color: #64748b;
+    margin-bottom: 20px;
+}
+
+/* FORMS */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 15px;
+    background: white;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #436bdb;
+    outline-offset: 1px;
+}
+
+button {
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.primary-btn {
+    background: #315bd4;
+    color: white;
+    border: none;
+    padding: 13px;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.primary-btn:hover {
+    background: #2445a8;
+}
+
+.secondary-btn {
+    border: 1px solid #315bd4;
+    background: white;
+    color: #315bd4;
+    padding: 10px 18px;
+    border-radius: 7px;
+}
+
+#logoutBtn {
+    background: #ef4444;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 9px 16px;
+}
+
+/* DASHBOARD */
+
+.dashboard {
+    background: #edf2ff;
+}
+
+.dashboard-card {
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+#dashboardSubtitle {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.dashboard .primary-link {
+    background: #315bd4;
+    color: white;
+}
+
+/* JOBS */
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.section-heading h2 {
+    margin: 0;
+    text-align: left;
+}
+
+.job-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 22px;
+}
+
+.job-card h3 {
+    color: #15254d;
+    margin-bottom: 15px;
+}
+
+.job-card p {
+    margin-bottom: 9px;
+}
+
+.eligibility-result {
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 6px;
+    background: #eef2ff;
+}
+
+/* MESSAGES */
+
+.message {
+    max-width: 900px;
+    margin: 15px auto;
+    padding: 0 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.message.success {
+    color: #15803d;
+}
+
+.message.error {
+    color: #b91c1c;
+}
+
+/* FOOTER */
+
+footer {
+    background: #15254d;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+footer p {
+    margin-top: 8px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+    .auth-container {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .section-heading {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero {
+        padding: 65px 20px;
+    }
+}
